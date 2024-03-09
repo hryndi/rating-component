@@ -1,0 +1,156 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #fdf8f8;
+  margin: 0;
+  padding: 0;
+  --text: #f3f1ec;
+  --background: #141520;
+  --primary: #1f2937;
+  --secondary: #111827;
+  --accent: #ea6506;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gray;
+
+  height: 100vh;
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.star {
+  width: 40px;
+  height: 40px;
+  align-self: flex-start;
+  border-radius: 99em;
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+main {
+  max-width: 360px;
+  background-color: var(--secondary);
+  padding: 25px;
+  width: 50vw;
+  /*   height: 45vh; */
+  border: black 1px solid;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+h1 {
+  align-self: flex-start;
+
+  color: var(--text);
+}
+p {
+  text-align: left;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.items-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.items-wrapper div {
+  background: var(--primary);
+  color: white;
+  /*   border: red 1px solid; */
+  border-radius: 99em;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: var(--accent);
+  color: var(--secondary);
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+
+  color: white;
+  height: 33px;
+  width: 95%;
+  border-radius: 15px;
+  border: none;
+}
+
+.modal {
+  height: 0;
+  padding: 0;
+}
+
+/* .modal h1{
+  position: absolute;
+  top: 0;
+  width:100%;
+  text-align: center;
+  margin-top:2rem;
+  font-size:1rem;
+ 
+
+
+    position: relative;
+    font-size:1rem;
+    top: -10rem;
+    border:greenyellow 2px solid;
+    border-radius:15px;
+    background:#3bac41;
+    padding: 5px;
+    opacity:0;
+    transition:0.3s ease-in;
+    transform:translateY(1000%)
+
+}
+
+.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+
+ */
+
+.modal h1 {
+  position: relative;
+  font-size: 1rem;
+  top: -10rem;
+  border: greenyellow 2px solid;
+  border-radius: 15px;
+  background: #3bac41;
+  padding: 5px;
+  opacity: 0;
+  transition: 0.3s ease-in;
+  transform: translateY(100%);
+}
+/*     opacity: 1;
+  transform: translateY(0); */
+
+.show h1 {
+  opacity: 1;
+  transform: translateY(0);
+}
