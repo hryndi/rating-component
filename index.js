@@ -24,7 +24,7 @@ rateBtns.forEach(function (btn) {
       el.classList.remove("selected");
     });
     btn.classList.toggle("selected");
-    ratingCount += +btn.dataset.rating;
+    ratingCount = +btn.dataset.rating;
     spanContainer.innerHTML = ratingCount;
   });
 });
