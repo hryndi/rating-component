@@ -8,7 +8,7 @@
   --text: #f3f1ec;
   --background: #141520;
   --primary: #1f2937;
-  --secondary: #111827;
+  --secondary: #141d2f;
   --accent: #ea6506;
 }
 * {
@@ -18,7 +18,7 @@
 }
 
 body {
-  background-color: gray;
+  background-color: hsl(220, 14%, 9%);
 
   height: 100vh;
   display: flex;
